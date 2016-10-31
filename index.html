@@ -88,19 +88,19 @@
 								
 							    <?php
     //if "email" variable is filled out, send email
-      if (isset($_REQUEST['email']))  {
+      if (isset($_REQUEST['from_email']))  {
       
       //Email information
-      $admin_email = "osideindeo@gmail.com";
-      $email = $_REQUEST['email'];
+      $admin_email = "akinlekan@gmail.com";
+      $email = $_REQUEST['from_email'];
       $subject = $_REQUEST['subject'];
       $message = $_REQUEST['message'];
       
       //send email
-      mail($admin_email, "$subject", $message, "From:" . $email);
+      mail($admin_email, "$subject", $message, "From:" . $from_email);
       
       //Email response
-      echo "Thank you for contacting us!";
+      echo "Thank you for contacting us. Our customer reprisentative will attend to you very soon";
       }
       
       //if "email" variable is not filled out, display the form
