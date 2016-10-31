@@ -85,7 +85,7 @@
 						<p>To get accross to our team for your web development projects such as portfolio websites, landing pages, e-Cormmerce websites and School portals. Our contact details is listed below, if you also want to reach us through our e-mail you can fill the form below.</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								/* PHP START HERE */
+								
 							    <?php
     //if "email" variable is filled out, send email
       if (isset($_REQUEST['email']))  {
@@ -106,7 +106,7 @@
       //if "email" variable is not filled out, display the form
       else  {
     ?>
-								<form method="post" action="index.html">
+								<form method="post" action="index.php">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="from_name" id="name" placeholder="Full Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="from_email" id="email" placeholder="Email" /></div>
@@ -116,7 +116,6 @@
 								<?php } ?>
 								
 								
-/* PHP END HERE */
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
