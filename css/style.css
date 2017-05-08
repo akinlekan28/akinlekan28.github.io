@@ -10,8 +10,8 @@ body, html {
 }
 .wrapper {
     background-color: #ffffff;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 31px;
+    margin-right: 31px;
     margin-top: 13px;
     padding-top: 7px;
     border-top: 14px solid #34DDDD;
@@ -24,6 +24,7 @@ body, html {
 }
 .navbar, .navbar-default {
     background-color: #34DDDD;
+    opacity: 0.9;
 }
 .navbar-default .navbar-nav>li>a {
     color:#ffffff;
@@ -65,8 +66,38 @@ a.navbar-brand {
     margin-top: 2px;
     width: 50%;
 }
-.head_service {
-   /* font-weight: 100; */
-
+@media (min-width: 992px) {
+    .shift_card {
+        margin-left: 160px;
+    }
 }
-
+.card {
+    background-color:#34DDDD;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+    border-radius: 9px 9px 0px 0px;
+    opacity: 0.9;
+}
+.bio {
+    margin-top: 30px;
+}
+.img_cust {
+    width: 120px;
+    height: 150px;
+    margin-top: 20px;
+}
+.img_cust:hover {
+    transform:scale(1.1);
+}
+.bio_cust {
+    background-color: #34DDDD;
+    width: 25%;
+    height: 350px;
+    margin: auto;
+    opacity: 0.9;
+    color: #ffffff;
+}
