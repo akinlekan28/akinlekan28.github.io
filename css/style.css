@@ -48,7 +48,7 @@ a.navbar-brand {
     color: white;
 }
 .back_info {
-    background-image: url('../img/bg.jpg');
+    background-image: url('http://res.cloudinary.com/djnhrvjyf/image/upload/v1494315483/bg_c2pvba.jpg');
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
