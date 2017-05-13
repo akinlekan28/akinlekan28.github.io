@@ -15,6 +15,13 @@ body, html {
     margin-top: 13px;
     padding-top: 7px;
     border-top: 14px solid #34DDDD;
+    border-bottom: 14px solid #34DDDD;
+}
+@media (min-width: 992px) {
+    .wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 .nav {
     margin-left: 10px;
@@ -48,7 +55,7 @@ a.navbar-brand {
     color: white;
 }
 .back_info {
-    background-image: url('http://res.cloudinary.com/djnhrvjyf/image/upload/v1494315483/bg_c2pvba.jpg');
+    background-image: url('../img/bg.jpg');
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,34 +77,134 @@ a.navbar-brand {
     .shift_card {
         margin-left: 160px;
     }
+    .bio_cust {
+        width: 28%;
+    }
+    .card {
+        margin-left: -22px;
+    }
+    .address {
+        float: right;
+        margin-top: -255px;
+        margin-right: 80px;
+    }
+    .yes {
+        margin-left: 60px;
+    }
+    .btn_cust {
+        width: 30px;
+    }
+    .foot_wrapper {
+        height: 160px;
+    }
+
 }
+
+@media (max-width: 768px) {
+    .bio_cust {
+        width: 85%;
+        height: 378px;
+    }
+    .card {
+        margin-bottom: 40px;
+        margin-left: 14px;
+    }
+    .contact{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .trial {
+        margin-bottom: 24px;
+    }
+    .btn_cust{
+        width: 80px;
+    }
+    .address {
+        margin-top: 22px;
+    }
+    .foot_wrapper {
+        height: 256px;
+    }
+
+}
+
 .card {
     background-color:#34DDDD;
     color: #ffffff;
     padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     width: 90%;
-    margin: auto;
     font-size: 13px;
-    border-radius: 9px 9px 0px 0px;
+    border-radius: 14px 0px 14px 0px;
     opacity: 0.9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .bio {
-    margin-top: 30px;
+    margin-top: 27px;
+    font-size: 14px;
 }
 .img_cust {
     width: 120px;
     height: 150px;
     margin-top: 20px;
+    border: 6px solid #ffffff;
 }
 .img_cust:hover {
     transform:scale(1.1);
 }
 .bio_cust {
     background-color: #34DDDD;
-    width: 25%;
-    height: 350px;
     margin: auto;
     opacity: 0.9;
     color: #ffffff;
+    border-radius: 14px 0px 14px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.bio_cust:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.contact {
+    margin-top: 30px;
+}
+.btn_cust {
+    width: 150px;
+    height: 40px;
+    background-color: #34DDDD;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.btn_cust:hover {
+    background-color: #34DDDD;
+    color: #ffffff;
+}
+.address {
+    font-size: 13px;
+}
+.foot_wrapper {
+    background-color: rgba(112, 117, 117, 0.72);
+    width: 100%;
+}
+.copy_date {
+    color: #ffffff;
+    font-size: 15px;
+}
+.heart {
+    color: red;
+    font-size: 17px;
+}
+.nav_footer {
+    color: #ffffff;
+    margin-left: 20px;
+
+}
+.foot_font {
+    font-size: 12px;
+}
+.foot_links>ul>li>a {
+    text-decoration: none !important;
 }
