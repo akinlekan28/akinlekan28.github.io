@@ -97,6 +97,10 @@ a.navbar-brand {
     .foot_wrapper {
         height: 160px;
     }
+    .copy_date {
+       margin-bottom: 40px;
+        color: blue;
+    }
 
 }
 
