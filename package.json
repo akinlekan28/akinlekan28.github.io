@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Akintola Olalekan Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinlekan28/akinlekan28.github.io.git"
+  },
+  "author": "akintola olalekan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akinlekan28/akinlekan28.github.io/issues"
+  },
+  "homepage": "https://github.com/akinlekan28/akinlekan28.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
