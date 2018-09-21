@@ -93,6 +93,14 @@
 * {
   box-sizing: border-box; }
 
+.mk-spinner-wrap {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999; }
+
 body {
   background: #446;
   color: #fff;
@@ -113,6 +121,12 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 102, 0.7); }
+
+.akintola {
+  text-shadow: -1px 0 #13aaa3, 0 1px #13aaa3, 1px 0 #13aaa3, 0 -1px #13aaa3; }
+
+.olalekan {
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; }
 
 h1,
 h2,
@@ -183,7 +197,26 @@ main {
   .about-info .job {
     background: #4e4e75;
     padding: 0.5rem;
-    border-bottom: #13aaa3 5px solid; }
+    border-bottom: #13aaa3 5px solid;
+    box-shadow: 4px 6px 5px #13aaa3; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7em;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #13aaa3;
+      transition: all 0.5s ease-out; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
 
 #main-footer {
   text-align: center;
