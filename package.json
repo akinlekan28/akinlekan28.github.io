@@ -4,7 +4,8 @@
   "description": "Akintola Olalekan Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "npm run sass && gh-pages -b master -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/akinlekan28/akinlekan28.github.io/issues"
   },
-  "homepage": "https://github.com/akinlekan28/akinlekan28.github.io#readme",
+  "homepage": "https://akinlekan28.github.io",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3"
   }
 }
