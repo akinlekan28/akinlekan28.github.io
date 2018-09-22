@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "npm run sass && gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist"
   },
   "repository": {
     "type": "git",
