@@ -1,15 +1,15 @@
 //Widescreens
 @include mediaXlg {
-    .projects {
-        grid-template-columns: (4, 1fr);
-    }
+  .projects {
+    grid-template-columns: (4, 1fr);
+  }
 }
 
 //Desktop & Laptops
 @include mediaLg {
-    .projects {
-        grid-template-columns: (3, 1fr);
-    }
+  .projects {
+    grid-template-columns: (3, 1fr);
+  }
 }
 
 //Tablets & small laptops
@@ -66,8 +66,7 @@
 
   .projects {
     grid-template-columns: (2, 1fr);
-}
-
+  }
 }
 
 //Smartphones
@@ -76,7 +75,33 @@
     margin-top: 10vh;
   }
 
+  .lg-heading {
+    font-size: 3.2rem !important;
+  }
+
   .projects {
     grid-template-columns: 1fr;
-}
+  }
+
+  .boxes {
+
+    div {
+      font-size: 1.2rem;
+      border: 3px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      @include easeOut;
+
+      &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        cursor: pointer;
+
+        span {
+          color: set-text-color($secondary-color);
+        }
+      }
+    }
+  }
 }

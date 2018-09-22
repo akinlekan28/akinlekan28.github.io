@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url(https://res.cloudinary.com/djnhrvjyf/image/upload/q_auto/v1537604200/portrait_xk3fnw.jpg);
       background-size: cover;
       border-radius: 50%;
       border: solid 4px #13aaa3; }
@@ -109,7 +109,7 @@ body {
   font-family: "Space Mono", monospace;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(https://res.cloudinary.com/djnhrvjyf/image/upload/q_auto/v1537602987/background_lr8kq1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -301,5 +301,20 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  .lg-heading {
+    font-size: 3.2rem !important; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1.2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #13aaa3;
+      color: #fff;
+      cursor: pointer; }
+      .boxes div:hover span {
+        color: #fff; } }
