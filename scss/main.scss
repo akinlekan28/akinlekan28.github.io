@@ -5,15 +5,6 @@
   box-sizing: border-box;
 }
 
-.mk-spinner-wrap {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
-
 body {
   @include background;
   background: $primary-color;
